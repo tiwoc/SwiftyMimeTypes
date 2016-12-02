@@ -30,9 +30,7 @@ public class MimeTypes {
         }
     }
 
-    /**
-     Returns a matching filename extension for a MIME type
-    */
+    /// Returns a matching filename extension for the given MIME type
     public func filenameExtension(forType type: String) -> String? {
         return byType[type]?.extensions.first
     }
