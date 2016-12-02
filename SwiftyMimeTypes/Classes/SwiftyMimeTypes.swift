@@ -19,7 +19,7 @@ public class MimeTypes {
 
     private var byType = [String: MimeType]()
 
-    public init() {
+    private init() {
         let dbText = MimeTypes.readDBFromBundle()
         dbText.enumerateLines { line, _ in
             let fields = line.components(separatedBy: " ")
