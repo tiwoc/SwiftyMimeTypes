@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SwiftyMimeTypes_Tests' do
+  pod 'SwiftyMimeTypes', :path => '../'
+  
+  
+end
