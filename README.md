@@ -11,7 +11,15 @@ or the extensions associated with a given MIME type.
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+SwiftyMimeTypes is a really small library with a simple interface:
+
+```swift
+// prints "js"
+print(MimeTypes.filenameExtension(forType: "application/javascript"))
+
+// prints "application/javascript"
+print(MimeTypes.mimeType(forExtension: "js"))
+```
 
 ## Requirements
 
