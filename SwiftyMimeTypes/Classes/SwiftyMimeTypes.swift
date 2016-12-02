@@ -14,8 +14,17 @@ class MimeType {
 
 public class MimeTypes {
 
-    /// Shared instance for common use
-    public static let shared = MimeTypes()
+    /// Returns a matching filename extension for the given MIME type
+    public class func filenameExtension(forType type: String) -> String? {
+        return MimeTypes.shared.filenameExtension(forType: type)
+    }
+
+    /// Returns the MIME type for the given filename extension
+    public class func mimeType(forExtension ext: String) -> String? {
+        return MimeTypes.shared.mimeType(forExtension: ext)
+    }
+
+    private static let shared = MimeTypes()
 
     private var byType = [String: MimeType]()
     private var byExtension = [String: MimeType]()
@@ -34,13 +43,11 @@ public class MimeTypes {
         }
     }
 
-    /// Returns a matching filename extension for the given MIME type
-    public func filenameExtension(forType type: String) -> String? {
+    func filenameExtension(forType type: String) -> String? {
         return byType[type]?.extensions.first
     }
 
-    /// Returns the MIME type for the given filename extension
-    public func mimeType(forExtension ext: String) -> String? {
+    func mimeType(forExtension ext: String) -> String? {
         return byExtension[ext]?.mimeType
     }
 
