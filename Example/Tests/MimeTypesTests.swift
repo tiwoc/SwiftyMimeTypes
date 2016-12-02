@@ -17,4 +17,10 @@ class MimeTypesTests: XCTestCase {
     func testMimeTypeForUnknownExtension() {
         XCTAssertNil(uut.mimeType(forExtension: "invented"))
     }
+
+    func testMimeTypeForCommonExtensions() {
+        XCTAssertEqual(uut.mimeType(forExtension: "txt"), "text/plain")
+        XCTAssertEqual(uut.mimeType(forExtension: "jpeg"), "image/jpeg")
+        XCTAssertEqual(uut.mimeType(forExtension: "jpg"), "image/jpeg")
+    }
 }

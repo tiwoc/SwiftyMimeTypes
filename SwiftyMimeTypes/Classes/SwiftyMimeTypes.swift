@@ -18,6 +18,7 @@ public class MimeTypes {
     public static let shared = MimeTypes()
 
     private var byType = [String: MimeType]()
+    private var byExtension = [String: MimeType]()
 
     private init() {
         let dbText = MimeTypes.readDBFromBundle()
@@ -27,6 +28,9 @@ public class MimeTypes {
             let type = MimeType(mimeType: fields[0], extensions: Array(fields.suffix(from: 1)))
 
             self.byType[type.mimeType] = type
+            for ext in type.extensions {
+                self.byExtension[ext] = type
+            }
         }
     }
 
@@ -37,7 +41,7 @@ public class MimeTypes {
 
     /// Returns the MIME type for the given filename extension
     public func mimeType(forExtension ext: String) -> String? {
-        return nil
+        return byExtension[ext]?.mimeType
     }
 
     private static func readDBFromBundle() -> String {
