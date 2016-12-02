@@ -13,4 +13,8 @@ class MimeTypesTests: XCTestCase {
         XCTAssertEqual(uut.filenameExtension(forType: "image/png"), "png")
         XCTAssertEqual(uut.filenameExtension(forType: "text/plain"), "txt")
     }
+
+    func testMimeTypeForUnknownExtension() {
+        XCTAssertNil(uut.mimeType(forExtension: "invented"))
+    }
 }

@@ -35,6 +35,11 @@ public class MimeTypes {
         return byType[type]?.extensions.first
     }
 
+    /// Returns the MIME type for the given filename extension
+    public func mimeType(forExtension ext: String) -> String? {
+        return nil
+    }
+
     private static func readDBFromBundle() -> String {
         let toplevelBundle = Bundle(for: MimeType.self)
 
