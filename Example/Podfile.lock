@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SwiftyMimeTypes: c274281a60f6febf00f1b3ef37c4ebdb6776544a
+  SwiftyMimeTypes: a0d04c5f083bb6766ce3daf1196fca486587d17b
 
 PODFILE CHECKSUM: 981fbeb77ed8e2a4e97295a1fbeaf09af67e9bf1
 

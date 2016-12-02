@@ -19,5 +19,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SwiftyMimeTypes/Classes/**/*"
+  "source_files": "SwiftyMimeTypes/Classes/**/*",
+  "resource_bundles": {
+    "SwiftyMimeTypes": [
+      "SwiftyMimeTypes/Assets/mime.types"
+    ]
+  }
 }
