@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2B603E1F03BEB651C48FEF01 /* Pods_SwiftyMimeTypes_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600BD060E42797C55D3168D4 /* Pods_SwiftyMimeTypes_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* MimeTypeDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* MimeTypeDBTests.swift */; };
+		607FACEC1AFB9204008FA782 /* MimeTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* MimeTypesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		600BD060E42797C55D3168D4 /* Pods_SwiftyMimeTypes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyMimeTypes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* SwiftyMimeTypes_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyMimeTypes_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* MimeTypeDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypeDBTests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* MimeTypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypesTests.swift; sourceTree = "<group>"; };
 		9384E3680F33C6B7F07382B5 /* SwiftyMimeTypes.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftyMimeTypes.podspec; path = ../SwiftyMimeTypes.podspec; sourceTree = "<group>"; };
 		B2F4409A9F093965E4193E17 /* Pods-SwiftyMimeTypes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyMimeTypes_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyMimeTypes_Tests/Pods-SwiftyMimeTypes_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DEA07E746B081DAB864F1F9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* MimeTypeDBTests.swift */,
+				607FACEB1AFB9204008FA782 /* MimeTypesTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* MimeTypeDBTests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* MimeTypesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

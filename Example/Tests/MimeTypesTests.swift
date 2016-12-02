@@ -1,13 +1,13 @@
 import XCTest
 import SwiftyMimeTypes
 
-class MimeTypeDBTests: XCTestCase {
-    var uut = MimeTypeDB()
+class MimeTypesTests: XCTestCase {
+    var uut = MimeTypes()
 
     override func setUp() {
         super.setUp()
 
-        uut = MimeTypeDB()
+        uut = MimeTypes()
     }
 
     func testExtensionForUnknownType() {

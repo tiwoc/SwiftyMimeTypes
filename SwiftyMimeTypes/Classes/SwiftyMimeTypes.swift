@@ -1,7 +1,7 @@
-public class MimeTypeDB {
+public class MimeTypes {
 
     /// Shared instance for common use
-    public static let shared = MimeTypeDB()
+    public static let shared = MimeTypes()
 
     public init() {
     }
