@@ -34,9 +34,9 @@ or the extensions associated with a given MIME type.
 
   s.source_files = 'SwiftyMimeTypes/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SwiftyMimeTypes' => ['SwiftyMimeTypes/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'SwiftyMimeTypes' => ['SwiftyMimeTypes/Assets/mime.types']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
