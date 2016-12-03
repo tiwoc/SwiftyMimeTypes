@@ -28,6 +28,7 @@ class MimeType {
     }
 }
 
+/// Simple interface to the MIME type database
 public class MimeTypes {
 
     /// Returns a matching filename extension for the given MIME type
