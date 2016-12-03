@@ -11,12 +11,18 @@ or the extensions associated with a given MIME type.
 
 ## Example
 
-SwiftyMimeTypes is a really small library with a simple interface:
+SwiftyMimeTypes is a really small library with a simple interface.
+
+### Get a filename extension for a given MIME type
 
 ```swift
 // prints "js"
 print(MimeTypes.filenameExtension(forType: "application/javascript"))
+```
 
+### Get the MIME type for a given filename extension
+
+```swift
 // prints "application/javascript"
 print(MimeTypes.mimeType(forExtension: "js"))
 ```
