@@ -20,6 +20,13 @@ SwiftyMimeTypes is a really small library with a simple interface.
 print(MimeTypes.filenameExtension(forType: "application/javascript"))
 ```
 
+### Get all known filename extensions for a given MIME type
+
+```swift
+// prints ["md", "markdown"]
+print(MimeTypes.filenameExtensions(forType: "text/markdown"))
+```
+
 ### Get the MIME type for a given filename extension
 
 ```swift
@@ -48,7 +55,7 @@ Daniel Seither, d@fdseither.de
 ## License
 
 ```
-Copyright 2016 Daniel Seither <d@fdseither.de>
+Copyright 2016, 2017 Daniel Seither <d@fdseither.de>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
