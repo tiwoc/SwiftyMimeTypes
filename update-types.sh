@@ -14,5 +14,4 @@ function minify_types {
 }
 
 curl "$APACHE_MIME_TYPES_URL" | minify_types > "$FILEPATH"
-< "$ADDITIONAL_TYPES_PATH"  minify_types >> "$FILEPATH"
-
+< "$ADDITIONAL_TYPES_PATH" minify_types >> "$FILEPATH"
