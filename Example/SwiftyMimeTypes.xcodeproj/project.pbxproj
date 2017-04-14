@@ -17,6 +17,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* MimeTypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypesTests.swift; sourceTree = "<group>"; };
 		65063B211DF2B43E003E9841 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		65F90AD51EA08DFF001277B6 /* additional.types */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = additional.types; path = ../additional.types; sourceTree = "<group>"; };
+		65F90AD61EA08DFF001277B6 /* update-types.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "update-types.sh"; path = "../update-types.sh"; sourceTree = "<group>"; };
 		9384E3680F33C6B7F07382B5 /* SwiftyMimeTypes.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftyMimeTypes.podspec; path = ../SwiftyMimeTypes.podspec; sourceTree = "<group>"; };
 		B2F4409A9F093965E4193E17 /* Pods-SwiftyMimeTypes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyMimeTypes_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyMimeTypes_Tests/Pods-SwiftyMimeTypes_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DEA07E746B081DAB864F1F9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				658C8D101EA08D7B0044E826 /* Additional MIME Types */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				76F29FD8AEA5DE09A0E96BEA /* Pods */,
@@ -81,6 +84,15 @@
 				DEA07E746B081DAB864F1F9D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		658C8D101EA08D7B0044E826 /* Additional MIME Types */ = {
+			isa = PBXGroup;
+			children = (
+				65F90AD51EA08DFF001277B6 /* additional.types */,
+				65F90AD61EA08DFF001277B6 /* update-types.sh */,
+			);
+			name = "Additional MIME Types";
 			sourceTree = "<group>";
 		};
 		76F29FD8AEA5DE09A0E96BEA /* Pods */ = {
