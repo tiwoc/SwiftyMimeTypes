@@ -1,5 +1,5 @@
 /*
- Copyright 2016 Daniel Seither <d@fdseither.de>
+ Copyright 2016, 2017 Daniel Seither <d@fdseither.de>
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -31,9 +31,14 @@ class MimeType {
 /// Simple interface to the MIME type database
 public class MimeTypes {
 
-    /// Returns a matching filename extension for the given MIME type
+    /// Returns an appropriate filename extension for the given MIME type
     public class func filenameExtension(forType type: String) -> String? {
         return MimeTypes.shared.filenameExtension(forType: type)
+    }
+
+    /// Returns all known filename extension for the given MIME type
+    public class func filenameExtensions(forType type: String) -> [String] {
+        return MimeTypes.shared.filenameExtensions(forType: type)
     }
 
     /// Returns the MIME type for the given filename extension
@@ -62,6 +67,10 @@ public class MimeTypes {
 
     func filenameExtension(forType type: String) -> String? {
         return byType[type]?.extensions.first
+    }
+
+    func filenameExtensions(forType type: String) -> [String] {
+        return byType[type]?.extensions ?? []
     }
 
     func mimeType(forExtension ext: String) -> String? {

@@ -1,5 +1,5 @@
 /*
- Copyright 2016 Daniel Seither <d@fdseither.de>
+ Copyright 2016, 2017 Daniel Seither <d@fdseither.de>
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -22,10 +22,21 @@ class MimeTypesTests: XCTestCase {
         XCTAssertNil(MimeTypes.filenameExtension(forType: "invented/type"))
     }
 
+    func testExtensionsForUnknownType() {
+        XCTAssertEqual(MimeTypes.filenameExtensions(forType: "invented/type"), [])
+    }
+
     func testExtensionForCommonTypes() {
         XCTAssertEqual(MimeTypes.filenameExtension(forType: "application/json"), "json")
         XCTAssertEqual(MimeTypes.filenameExtension(forType: "image/png"), "png")
         XCTAssertEqual(MimeTypes.filenameExtension(forType: "text/plain"), "txt")
+    }
+
+    func testExtensionsForCommonTypes() {
+        XCTAssertEqual(
+            Set(MimeTypes.filenameExtensions(forType: "text/markdown")),
+            Set(["markdown", "md"]))
+        XCTAssertEqual(MimeTypes.filenameExtensions(forType: "image/png"), ["png"])
     }
 
     func testMimeTypeForUnknownExtension() {
