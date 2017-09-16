@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.0.0 (2017-09-16)
+- Update to Xcode 9
+- Update to Swift 4 (use the `swift3` branch if you need Swift 3 compatibility)
+
 ## 1.0.0 (2017-04-14)
 - Add infrastructure to add extra types and extensions (see `additional.types`)
 - Add Markdown type

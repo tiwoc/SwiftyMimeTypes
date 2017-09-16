@@ -36,8 +36,7 @@ print(MimeTypes.mimeType(forExtension: "js"))
 
 ## Requirements
 
-* Xcode 8
-* Swift 3
+Xcode 9 and Swift 4 (use version 1.x or the `swift3` branch for Xcode 8 and Swift 3 compatibility)
 
 ## Installation
 
