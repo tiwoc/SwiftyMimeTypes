@@ -41,7 +41,7 @@ print(MimeTypes.mimeType(forExtension: "js"))
 
 ## Installation
 
-SwiftyMimeTypes is available through [CocoaPods](http://cocoapods.org). To install
+SwiftyMimeTypes is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
