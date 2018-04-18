@@ -36,7 +36,7 @@ print(MimeTypes.mimeType(forExtension: "js"))
 
 ## Requirements
 
-Xcode 9 and Swift 4 (use version 1.x or the `swift3` branch for Xcode 8 and Swift 3 compatibility)
+Xcode 9.x and Swift 4.x (use version 1.x or the `swift3` branch for Xcode 8 and Swift 3 compatibility)
 
 ## Installation
 
@@ -47,6 +47,10 @@ it, simply add the following line to your Podfile:
 pod "SwiftyMimeTypes"
 ```
 
+### Swift Package Manager (SPM)
+
+There's no SPM support yet, as there's currently no way to include resources (the mime.types file) with targets. See [bug SR-2866](https://bugs.swift.org/browse/SR-2866) for details.
+
 ## Author
 
 Daniel Seither, d@fdseither.de
@@ -54,7 +58,7 @@ Daniel Seither, d@fdseither.de
 ## License
 
 ```
-Copyright 2016, 2017 Daniel Seither <d@fdseither.de>
+Copyright 2016, 2017, 2018 Daniel Seither <d@fdseither.de>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
