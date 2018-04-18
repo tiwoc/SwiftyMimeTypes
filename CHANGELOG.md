@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.1.0 (2018-08-18)
+- Update MIME type list
+- Update example project to Xcode 9.3
+
 ## 2.0.0 (2017-09-16)
 - Update to Xcode 9
 - Update to Swift 4 (use the `swift3` branch if you need Swift 3 compatibility)
